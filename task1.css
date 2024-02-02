@@ -1,0 +1,428 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #f6e3e3;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #ff9dcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container::before
+{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-color: #f67878 ;
+}
+.container .hero{
+    position: relative;
+    z-index: 10;
+    height: 85vh;
+    width: 75%;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border: 4px solid #ff9dcf;
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgb(10, 10, 10, 0.15);
+    padding: 0 40px 0 80px; 
+}
+.hero nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+.hero nav .logo{
+    color: #801f82;
+    font-size: 45px;
+    font-weight: bold;
+}
+.hero nav .nav-links a{
+    color: #242424 ;
+    margin-left: 40px;
+    text-transform: capitalize;
+    transition: 0.3s; 
+}
+.hero nav .nav-links a:hover,
+.hero nav .nav-links a.active{
+    color: #801f82;
+}
+.hero .content{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px ;
+}
+.hero .content .div-text{
+    width: 40%;
+    padding-top: 20%;
+}
+.hero .content .div-text h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #fff;
+
+}
+.hero .content .div-text p{
+    color: #801f82;
+    margin-bottom: 50px;
+    font-size: 18px;
+
+}
+.hero .content .div-img{
+    width: 40%;
+    padding-top: 10%;
+}
+.hero .content .div-img img{
+    width: 100%;
+}
+
+/*--------------------------------------About ME-----------------------*/
+
+.container1{
+    width: 100%;
+    height: 100vh;
+    background-color: #ff9dcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container1 .hero1{
+    position: relative;
+    z-index: 10;
+    height: 85vh;
+    width: 75%;
+    background: rgb(244, 185, 215);
+    backdrop-filter: blur(25px);
+    border: 4px solid #f86bb4;
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgb(10, 10, 10, 0.15);
+    padding: 0 40px 0 80px; 
+}
+.hero1 .title{
+    padding-top: 10%;
+    color: #801f82;
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+.hero1 .content .div-text1 p{
+    color: #801f82;
+    margin-bottom: 50px;
+    font-size: 18px;
+
+}
+.container1 .hero1 .content .img1{
+    width: 40%;
+    padding-top: 15px;
+    float: left;
+}
+.hero1 .content .img1 img{
+    width: 80%;
+}
+/*--------------------------------------------skills-----------------------------------*/
+.container2{
+    width: 100%;
+    height: 100vh;
+    background-color: #ff9dcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container2 .hero2{
+    position: relative;
+    z-index: 10;
+    height: 85vh;
+    width: 75%;
+    background: rgb(244, 185, 215);
+    backdrop-filter: blur(25px);
+    border: 4px solid #f86bb4;
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgb(10, 10, 10, 0.15);
+    padding: 0 40px 0 80px; 
+}
+.hero2 .title{
+    padding-top: 10%;
+    color: #801f82;
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+.skills-bar{
+    width: 600px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.skills-bar .bar{
+    margin: 50px 0;
+}
+.skills-bar .bar:first-child{
+    margin-top: 0px;
+}
+.skills-bar .bar .info{
+    margin-bottom: 5px;
+}
+.skills-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    box-shadow: insert 0px 1px 1px rgba(0, 0, 0, 0.05),
+                       0px 1px rgb(255, 255, 255, 0.8) ;             
+} 
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: #f86bb4;
+    position: absolute;
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 90%;
+}
+.progress-line.corejava span{
+    width: 80%;
+}
+.progress-line.advancejava span{
+    width: 80%;
+}
+.progress-line.springboot span{
+    width: 80%;
+}
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #f0f0f0 ;
+}
+.bar .progress-line span::after{
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #f0f0f0;
+    font-size: 500;
+    background: #801f82;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "90%";
+}
+.progress-line.corejava span::after{
+    content: "80%";
+}
+.progress-line.advancejava span::after{
+    content: "80%";
+}
+.progress-line.springboot span::after{
+    content: "80%";
+}
+/*------------------------------resume--------------------------*/
+.container3{
+    width: 100%;
+    height: 100vh;
+    background-color: #ff9dcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container3 .hero3{
+    position: relative;
+    z-index: 10;
+    height: 85vh;
+    width: 75%;
+    background: rgb(244, 185, 215);
+    backdrop-filter: blur(25px);
+    border: 4px solid #f86bb4;
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgb(10, 10, 10, 0.15);
+    padding: 0 40px 0 80px; 
+}
+.hero3 .title{
+    padding-top: 10%;
+    color: #801f82;
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+/*---------------------------------------------Contact----------------------------*/
+
+.container4{
+    width: 100%;
+    height: 100vh;
+    background-color: #ff9dcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container4 .hero4{
+    position: relative;
+    z-index: 10;
+    height: 85vh;
+    width: 75%;
+    background: rgb(244, 185, 215);
+    backdrop-filter: blur(25px);
+    border: 4px solid #f86bb4;
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgb(10, 10, 10, 0.15);
+    padding: 0 40px 0 80px; 
+}
+.hero4 .title{
+    padding-top: 10%;
+    color: #801f82;
+    margin-bottom: 50px;
+    font-size: 28px;  
+}
+.hero4 .contact-wrapper{
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+.contact-form{
+    text-align: left;
+}
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #801f82;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    color: #f86bb4;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f86bb4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: #ef3696;
+}
+.contact-info{
+    text-align: left;
+}
+.contact-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #801f82;
+}
+.contact-info p{
+    margin-bottom: 10px;
+    color: #801f82;
+}
+.contact-info i{
+    color: #f80d87;
+    margin-right: 10px;
+}
+@media screen and(max-width: 768px){
+    .hero4 .contact-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+/*------------------------------footer------------------------------*/
+.footer{
+    padding: 40px;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #801f82;
+}
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #f49999;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+.footer .social a:hover{
+    opacity: 0.9;
+
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+    color: #ef3696;
+}
+.footer ul li a:hover{
+    opacity: 1;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #801f82;
+}
